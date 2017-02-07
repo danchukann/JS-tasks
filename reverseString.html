@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse String</title>
+</head>
+<body>
+<!--Вхідні дані: довільна, відмінна від нуля, кількість значень - аргументів командного рядка. Значеннями-аргументами можуть бути числа або рядки, які складаються з цифр та літер латинського алфавіту без пробілів.
+
+Результат роботи: рядок, що складається з отриманих значень в зворотньому порядку, записаних через пробіл. Пробіл в кінці рядка відсутній.
+Вхідні дані: qwe asd zxc 123
+Результат: 123 zxc asd qwe
+Вхідні дані: padawan young my HAVE MUST YOU PATIENCE
+Результат: PATIENCE YOU MUST HAVE my young padawan
+
+-->
+<script>
+var str = prompt("input the data: ");
+console.log(str);
+var arr = str.split(' ');
+var arrRev = arr.reverse();
+var strRev = arrRev.join(' ');
+console.log(strRev);
+
+</script>
+
+</body>
+</html>

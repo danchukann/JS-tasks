@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrom</title>
+</head>
+<body>
+<script>
+	var word = prompt("input the srting: ");
+	var wordLower = word.toLowerCase();
+	var wordClear = wordLower.replace(/ /gi, "");
+	var arr=[];
+	for (var i = 0; i < wordClear.length; i++) {
+		arr.push(wordClear[i]);
+	}
+	var arrRev = arr.reverse();
+	console.log(arrRev);
+	var wordRev = arrRev.join('');
+
+	if (wordClear === wordRev){
+		console.log("Palindrom");
+	}else{
+		console.log("Not a Palindrom");
+	}
+	
+
+
+</script>
+</body>
+</html>
